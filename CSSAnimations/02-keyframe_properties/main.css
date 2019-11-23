@@ -9,7 +9,7 @@ div.container {
   width: 100px;
   height: 100px;
   border-radius: 50px;
-  background-color: #50ed50;
+  background-color: #0ff;
   animation-name: angry-animation;
   animation-duration: .5s;
   animation-timing-function: ease;
