@@ -2,11 +2,21 @@ body{
     background-color: #333;
 }
 
-img {
-    margin: 50px;
-    transition: transform 1s ease;
+.img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    margin:-50px 0 0 -0px;
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
 }
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
 
-img:hover {
-    transform: scale(2);
-}
+/*
+ref: https://stackoverflow.com/questions/16771225/css3-rotate-animation
+*/
